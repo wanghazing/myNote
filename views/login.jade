@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	.container
+		.row
+			.col-xs-4.col-xs-offset-4
+				form(method='post')
+					.form-group
+						input.form-control(type='text',name = 'username',placeholder='请输入用户名')
+					.for-group
+						input.form-control(type='password',name='password',placeholder='请输入密码')
+					button.btn-btn-default.center-block(type='submit') 登陆

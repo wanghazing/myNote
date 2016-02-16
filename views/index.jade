@@ -1,0 +1,12 @@
+extends layout
+block content
+	.container
+		-arts.forEach(function(art){
+			.col-xs-8.col-xs-offset-2
+				.article-box
+					a(href='/detail/#{art._id}') <h3>#{art.title}</h3>
+					p.text-center
+						span.label.label-info #{art.tag}
+						span.create-time <span class='text-bold'>时间：</span>#{art.createTime}
+					p #{art.content}							
+		-});
